@@ -11,7 +11,7 @@ libraries{
     enforce_quality_gate = true
   }
   docker{
-    registry = "localhost:5000"
+    registry = "0.0.0.0:5000"
     cred = "sdp-docker-registry"
   }
 }
