@@ -2,6 +2,8 @@ keywords{
   message = "Starting My Pipeline, with governance"
 }
 
+pipeline_template = "standard"
+
 steps{
   build_source{
     stage = "Build Code"
