@@ -4,10 +4,6 @@ keywords{
 
 pipeline_template = "standard"
 
-libraries{
-  gradle
-}
-
 steps{
   build_source{
     stage = "Build Code"
