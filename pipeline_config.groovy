@@ -8,7 +8,7 @@ steps{
   build_source{
     stage = "Build Code"
     image = "gradle:jdk8"
-    command = "sh './gradlew clean build'"
+    command = "sh 'gradle clean build'"
     stash{
       name = "build-results"
       includes = "./build"
