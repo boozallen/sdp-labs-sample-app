@@ -8,6 +8,6 @@ steps{
   build_source2{
     stage = "Build Code"
     image = "gradle:jdk8"
-    script = ".script/build_source.groovy"
+    script = "./script/build_source.groovy"
   }
 }
