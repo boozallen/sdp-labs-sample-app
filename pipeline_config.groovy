@@ -4,17 +4,17 @@ keywords{
 
 pipeline_template = "standard"
 
-//steps{
-//  build_source{
-//    stage = "Build Code"
-//    image = "gradle:jdk8"
-//    script = "sh 'gradle clean build'"
-//    stash{
-//      name = "build-results"
+steps{
+  build_source{
+    stage = "Build Code"
+    image = "gradle:jdk8"
+    command = "./gradlew clean build"
+    stash{
+      name = "workspace"
 //      includes = "./build"
 //      excludes = "./src"
-//      useDefaultExcludes = false
-//      allowEmpty = true
-//    }
-//  }
-//}
+      useDefaultExcludes = false
+      allowEmpty = true
+    }
+  }
+}
