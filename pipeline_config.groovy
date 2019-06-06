@@ -1,5 +1,5 @@
 keywords{
-  message = "Starting My Pipeline, with governance"
+  message = "Starting My Pipeline, for github lib pr testing"
 }
 
 pipeline_template = "standard"
